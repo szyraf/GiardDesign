@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GiardDesign</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
@@ -150,15 +150,79 @@
             wykorzystaniem istniejącej przestrzeni.
           </p>
           <button
-            class="text-secondary bg-white py-3 rounded-full mt-4 sm:mt-6 md:mt-8"
+            class="flex flex-col text-secondary bg-white py-3 mt-4 sm:mt-6 md:mt-8"
           >
-            Dowiedz się więcej
+            <div class="flex items-center">
+              <span class="mr-[10px]">Dowiedz się więcej</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
+                  fill="#1B5B31"
+                />
+              </svg>
+            </div>
+            <div class="w-full h-[1px] bg-secondary mt-1"></div>
           </button>
         </div>
       </div>
     </div>
 
     <!-- Sekcja O firmie -->
+    <div class="flex flex-col sm:flex-row w-screen h-screen about-height">
+      <div
+        class="h-full sm:w-1/2 bg-gradient-to-t from-white via-white to-transparent bg-no-repeat bg-cover flex items-center justify-center relative"
+      >
+        <img
+          src="imgs/dom.jpg"
+          alt="dom"
+          class="w-full h-full object-cover transform scale-x-[-1]"
+        />
+      </div>
+      <div
+        class="h-full sm:w-1/2 bg-secondary p-4 sm:p-8 md:p-16 lg:p-20 xl:p-24 flex flex-col justify-center items-start sm:gap-6"
+      >
+        <p class="text-third mb-1 sm:mb-2 md:mb-4">O firmie</p>
+        <h2
+          class="text-third text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-montserrat font-medium mb-1 sm:mb-2 md:mb-6 lg:mb-8 xl:mb-10"
+        >
+          Tworzymy
+          <br />
+          z
+          <i>pasją</i>
+        </h2>
+        <p class="text-third text-xs sm:text-sm md:text-base mb-[72px]">
+          Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+          wykwalifikowani projektanci oraz architekci, których zadaniem jest
+          rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja
+          to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria
+          i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do
+          współczesnego trybu życia.
+        </p>
+        <button
+          class="flex items-center text-third bg-secondary rounded-full border-2 px-[22px] pt-3 pb-[14px]"
+        >
+          <span class="mr-2">Poznaj nas bliżej</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
+              fill="#F5F0EC"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <!-- Sekcja Realizacja -->
 
