@@ -31,14 +31,14 @@
 
         <!-- Sekcja Intro -->
         <div class="flex flex-col sm:flex-row w-screen h-screen intro-height">
-            <div class="h-full sm:w-7/12 bg-primary p-4 sm:p-8 md:p-16 lg:p-20 xl:p-24 flex flex-col justify-center items-center sm:gap-6 md:gap-12">
+            <div class="h-full sm:w-7/12 bg-primary p-4 sm:p-8 md:p-16 lg:p-20 xl:p-24 flex flex-col justify-center items-start sm:gap-6 md:gap-12">
                 <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-montserrat font-medium mb-1 sm:mb-2 md:mb-4">
                     Nowoczesna aranżacja Twojego ogrodu
                 </h1>
-                <p class="text-xs sm:text-sm md:text-base">
+                <p class="w-4/5 text-xs sm:text-sm md:text-base">
                     Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.
                 </p>
-                <div class="flex gap-9 w-full">
+                <div class="flex flex-col md:flex-row gap-9 w-full">
                     <button class="bg-secondary text-white font-medium py-3 px-6 rounded-full mt-4 sm:mt-6 md:mt-8 hover:bg-primary hover:text-white transition duration-300">
                         Skontaktuj się z nami
                     </button>
@@ -51,18 +51,20 @@
             <div class="h-full sm:w-5/12 bg-gradient-to-t from-white via-white to-transparent bg-no-repeat bg-cover flex items-center justify-center relative">
                 <img src="imgs/krzaki.jpg" alt="żywopłot" class="w-full h-full object-cover transform scale-x-[-1]">
             </div>
+            <!-- TODO: add arrows for slider -->
         </div>
 
         <!-- Sekcja Oferta -->
         <div class="flex flex-col bg-third w-screen pt-[120px] pb-40 gap-24">
-            <div class="flex flex-col justify-center items-start px-8 sm: xl:px-[200px]">
+            <!-- TODO: between sm and xl -->
+            <div class="flex flex-col justify-center items-start px-8 xl:px-[200px]">
                 <p class="text-secondary mb-1 sm:mb-2 md:mb-4">
                     Oferta
                 </p>
                 <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-montserrat font-medium mb-1 sm:mb-2 md:mb-4 lg:mb-6 xl:mb-8">
                     Działamy <i>kompleksowo</i>
                 </h2>
-                <p>
+                <p class="w-2/3">
                     Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. 
                 </p>
             </div>
@@ -75,6 +77,9 @@
                     <p class="text-sm">
                         Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.
                     </p>
+                    <button class="text-secondary bg-white py-3 rounded-full mt-4 sm:mt-6 md:mt-8">
+                        Dowiedz się więcej
+                    </button>
                 </div>
             </div>
         </div>
