@@ -5,3 +5,7 @@
 .intro-height {
     max-height: calc(100vh - 4em);
 }
+
+.about-height {
+    max-height: calc(100vh - 5em);
+}
