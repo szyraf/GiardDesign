@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body
-    class="flex flex-col items-center bg-white text-black font-inter overflow-x-hidden"
+    class="flex flex-col items-center bg-white text-blackish font-inter overflow-x-hidden"
   >
     <!-- Sekcja Nawigacja -->
     <header class="h-16 w-full">
@@ -81,7 +81,7 @@
     <!-- Sekcja Intro -->
     <div class="flex flex-col sm:flex-row w-screen h-screen intro-height">
       <div
-        class="h-full sm:w-7/12 bg-primary p-4 sm:p-8 md:p-16 lg:p-20 xl:p-24 flex flex-col justify-center items-start sm:gap-6 md:gap-12"
+        class="h-full sm:w-1/2 bg-primary p-4 sm:p-8 md:p-16 lg:p-20 xl:p-24 flex flex-col justify-center items-start sm:gap-6 md:gap-12"
       >
         <h1
           class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-montserrat font-medium mb-1 sm:mb-2 md:mb-4"
@@ -107,8 +107,9 @@
           </button>
         </div>
       </div>
+      <div class="h-full w-16 bg-primary"></div>
       <div
-        class="h-full sm:w-5/12 bg-gradient-to-t from-white via-white to-transparent bg-no-repeat bg-cover flex items-center justify-center relative"
+        class="h-full sm:w-1/2 bg-gradient-to-t from-white via-white to-transparent bg-no-repeat bg-cover flex items-center justify-center relative"
       >
         <img
           src="imgs/krzaki.jpg"
@@ -120,7 +121,7 @@
     </div>
 
     <!-- Sekcja Oferta -->
-    <div class="flex flex-col bg-third w-screen pt-[120px] pb-40 gap-24">
+    <div class="flex flex-col bg-tertiary w-screen pt-[120px] pb-40 gap-24">
       <!-- TODO: between sm and xl -->
       <div class="flex flex-col justify-center items-start px-8 xl:px-[200px]">
         <p class="text-secondary mb-1 sm:mb-2 md:mb-4">Oferta</p>
@@ -184,19 +185,20 @@
           class="w-full h-full object-cover transform scale-x-[-1]"
         />
       </div>
+      <div class="h-full w-16 bg-secondary"></div>
       <div
         class="h-full sm:w-1/2 bg-secondary p-4 sm:p-8 md:p-16 lg:p-20 xl:p-24 flex flex-col justify-center items-start sm:gap-6"
       >
-        <p class="text-third mb-1 sm:mb-2 md:mb-4">O firmie</p>
+        <p class="text-tertiary mb-1 sm:mb-2 md:mb-4">O firmie</p>
         <h2
-          class="text-third text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-montserrat font-medium mb-1 sm:mb-2 md:mb-6 lg:mb-8 xl:mb-10"
+          class="text-tertiary text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-montserrat font-medium mb-1 sm:mb-2 md:mb-6 lg:mb-8 xl:mb-10"
         >
           Tworzymy
           <br />
           z
           <i>pasją</i>
         </h2>
-        <p class="text-third text-xs sm:text-sm md:text-base mb-[72px]">
+        <p class="text-tertiary text-xs sm:text-sm md:text-base mb-[72px]">
           Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
           wykwalifikowani projektanci oraz architekci, których zadaniem jest
           rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja
@@ -205,7 +207,7 @@
           współczesnego trybu życia.
         </p>
         <button
-          class="flex items-center text-third bg-secondary rounded-full border-2 px-[22px] pt-3 pb-[14px]"
+          class="flex items-center text-tertiary bg-secondary rounded-full border-2 px-[22px] pt-3 pb-[14px]"
         >
           <span class="mr-2">Poznaj nas bliżej</span>
           <svg
@@ -225,6 +227,22 @@
     </div>
 
     <!-- Sekcja Realizacja -->
+    <div class="flex flex-col w-screen h-[300vh]">
+      <div
+        class="bg-primary pl-40 pt-[120px] pb-24 flex flex-col justify-start items-start"
+      >
+        <p class="text-secondary mb-1 sm:mb-2 md:mb-4">Realizacja</p>
+        <h2
+          class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-montserrat font-medium"
+        >
+          Nasze
+          <i>projekty</i>
+        </h2>
+      </div>
+      <div class="bg-red-200 w-full h-full">
+        <!-- TODO: Masonry - zdjęcia; 3 kolumny -->
+      </div>
+    </div>
 
     <!-- Sekcja Kontakt -->
 
