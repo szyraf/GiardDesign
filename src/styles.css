@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .intro-height {
-    max-height: calc(100vh - 4em);
+    max-height: calc(100vh - 72px);
 }
 
 .about-height {
