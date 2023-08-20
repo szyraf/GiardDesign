@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
   </head>
   <body
     class="flex flex-col items-center bg-tertiary text-blackish font-inter overflow-x-hidden"
@@ -401,8 +402,20 @@
           <i>projekty</i>
         </h2>
       </div>
-      <div class="bg-red-200 w-full h-full">
-        <!-- TODO: Masonry - zdjęcia; 3 kolumny -->
+      <div class="bg-primary w-full h-full">
+        <!-- TODO: Masonry - each column the same final height -->
+        <div class="grid-masonry">
+          <div class="gutter-sizer"></div>
+          <div class="grid-item-masonry"><img src="imgs/1.jpg" alt="" /></div>
+          <div class="grid-item-masonry"><img src="imgs/2.jpg" alt="" /></div>
+          <div class="grid-item-masonry"><img src="imgs/3.jpg" alt="" /></div>
+          <div class="grid-item-masonry"><img src="imgs/4.jpg" alt="" /></div>
+          <div class="grid-item-masonry"><img src="imgs/5.jpg" alt="" /></div>
+          <div class="grid-item-masonry"><img src="imgs/6.jpg" alt="" /></div>
+          <div class="grid-item-masonry"><img src="imgs/7.jpg" alt="" /></div>
+          <div class="grid-item-masonry"><img src="imgs/8.jpg" alt="" /></div>
+          <div class="grid-item-masonry"><img src="imgs/9.jpg" alt="" /></div>
+        </div>
       </div>
     </div>
     <div id="kontakt" class="bg-tertiary w-screen h-[50vh] py-[60px]">
@@ -590,5 +603,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
