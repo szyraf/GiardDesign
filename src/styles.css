@@ -9,3 +9,23 @@
 .about-height {
     max-height: calc(100vh - 5em);
 }
+
+.grid-masonry {
+    
+}
+
+.grid-item-masonry {
+    width: 31%;
+    box-sizing: border-box;
+    margin-bottom: 3.5%;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gutter-sizer {
+    width: 3.5%;
+}
