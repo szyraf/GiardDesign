@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth transition">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -86,22 +86,48 @@
           <div
             class="hidden md:flex flex-row justify-center items-center gap-12 text-sm"
           >
-            <div class="flex flex-row justify-between items-center gap-[5px]">
-              <p>Oferta</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-                fill="none"
+            <div class="flex flex-col group relative">
+              <a href="#oferta">
+                <div
+                  class="!flex flex-row justify-between items-center gap-[5px] relative group-hover:block"
+                >
+                  <p>Oferta</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.13017 4.81427C1.95661 4.6407 1.95661 4.3593 2.13017 4.18573C2.28796 4.02794 2.53487 4.0136 2.70887 4.1427L2.75871 4.18573L6 7.42681L9.24129 4.18573C9.39907 4.02794 9.64599 4.0136 9.81998 4.1427L9.86983 4.18573C10.0276 4.34352 10.042 4.59043 9.91286 4.76442L9.86983 4.81427L6.31427 8.36983C6.15648 8.52761 5.90957 8.54196 5.73558 8.41286L5.68573 8.36983L2.13017 4.81427Z"
+                      fill="#111111"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <div
+                class="hidden flex-col absolute top-5 left-[-10px] group-hover:flex bg-white min-w-[150px] z-10"
               >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M2.13017 4.81427C1.95661 4.6407 1.95661 4.3593 2.13017 4.18573C2.28796 4.02794 2.53487 4.0136 2.70887 4.1427L2.75871 4.18573L6 7.42681L9.24129 4.18573C9.39907 4.02794 9.64599 4.0136 9.81998 4.1427L9.86983 4.18573C10.0276 4.34352 10.042 4.59043 9.91286 4.76442L9.86983 4.81427L6.31427 8.36983C6.15648 8.52761 5.90957 8.54196 5.73558 8.41286L5.68573 8.36983L2.13017 4.81427Z"
-                  fill="#111111"
-                />
-              </svg>
+                <div class="px-3 py-4"></div>
+                <a href="#card-projekty" class="px-3 py-4 hover:bg-gray-100 hv">
+                  Projekty
+                </a>
+                <a
+                  href="#card-wizualizacje"
+                  class="px-3 py-4 hover:bg-gray-100 hv"
+                >
+                  Wizualizacje
+                </a>
+                <a
+                  href="#card-realizacje"
+                  class="px-3 py-4 hover:bg-gray-100 hv"
+                >
+                  Realizacje
+                </a>
+              </div>
             </div>
             <a href="#ofirmie">O firmie</a>
             <a href="#realizacja">Realizacje</a>
@@ -228,6 +254,7 @@
         class="flex flex-row flex-wrap justify-center gap-8 sm:gap-16 p-auto mx-8 sm:mx-16 w-[calc(100wh - 128px)]"
       >
         <div
+          id="card-projekty"
           class="flex flex-col justify-between items-start w-[378px] h-auto sm:h-[370px] px-10 py-12 bg-white rounded-[28px]"
         >
           <div class="flex flex-col justify-start items-start pb-8 sm:pb-0">
@@ -272,6 +299,7 @@
           </div>
         </div>
         <div
+          id="card-wizualizacje"
           class="flex flex-col justify-between items-start w-[378px] h-auto sm:h-[370px] px-10 py-12 bg-white rounded-[28px]"
         >
           <div class="flex flex-col justify-start items-start">
@@ -312,6 +340,7 @@
           </div>
         </div>
         <div
+          id="card-realizacje"
           class="flex flex-col justify-between items-start w-[378px] h-auto sm:h-[370px] px-10 py-12 bg-white rounded-[28px]"
         >
           <div class="flex flex-col justify-start items-start">
