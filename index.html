@@ -390,7 +390,7 @@
         </a>
       </div>
     </div>
-    <div id="realizacja" class="flex flex-col w-screen h-[300vh]">
+    <div id="realizacja" class="flex flex-col w-screen">
       <div
         class="bg-primary pl-40 pt-[120px] pb-24 flex flex-col justify-start items-start"
       >
@@ -402,9 +402,20 @@
           <i>projekty</i>
         </h2>
       </div>
-      <div class="bg-primary w-full h-full">
+
+      <div class="bg-primary w-full h-full relative">
+        <div
+          class="absolute top-1/3 w-full h-2/3 z-10"
+          style="
+            background: linear-gradient(
+              360deg,
+              #dcc1ab 0%,
+              rgba(214, 183, 158, 0) 100%
+            );
+          "
+        ></div>
         <!-- TODO: Masonry - each column the same final height -->
-        <div class="grid-masonry">
+        <div class="grid-masonry absolute top-0">
           <div class="gutter-sizer"></div>
           <div class="grid-item-masonry"><img src="imgs/1.jpg" alt="" /></div>
           <div class="grid-item-masonry"><img src="imgs/2.jpg" alt="" /></div>
@@ -415,6 +426,29 @@
           <div class="grid-item-masonry"><img src="imgs/7.jpg" alt="" /></div>
           <div class="grid-item-masonry"><img src="imgs/8.jpg" alt="" /></div>
           <div class="grid-item-masonry"><img src="imgs/9.jpg" alt="" /></div>
+        </div>
+        <div
+          class="absolute bottom-[90px] z-20 w-full flex justify-center items-center"
+        >
+          <button
+            class="border-2 border-blackish px-[22px] pt-3 pb-[14px] rounded-full z-20"
+          >
+            <div class="flex items-center">
+              <span class="mr-2">Rozwiń</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+              >
+                <path
+                  d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
+                  fill="#111111"
+                />
+              </svg>
+            </div>
+          </button>
         </div>
       </div>
     </div>
