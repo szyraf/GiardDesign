@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <link href="lightbox/lightbox.min.css" rel="stylesheet" />
     <script defer src="lightbox/lightbox-plus-jquery.min.js"></script>
   </head>
@@ -24,7 +24,9 @@
       <div
         class="flex items-stretch py-6 px-4 sm:px-8 md:px-16 lg:px-20 xl:px-24 w-full"
       >
-        <div class="flex flex-row justify-between items-center w-full">
+        <div
+          class="flex flex-row justify-center md:justify-between items-center w-full"
+        >
           <a href="">
             <div class="flex items-center">
               <svg
@@ -81,7 +83,9 @@
               </svg>
             </div>
           </a>
-          <div class="flex flex-row justify-center items-center gap-12 text-sm">
+          <div
+            class="hidden md:flex flex-row justify-center items-center gap-12 text-sm"
+          >
             <div class="flex flex-row justify-between items-center gap-[5px]">
               <p>Oferta</p>
               <svg
@@ -129,26 +133,32 @@
       class="flex flex-col sm:flex-row w-screen h-screen intro-height"
     >
       <div
-        class="h-full sm:w-1/2 bg-primary pl-4 sm:pl-8 md:pl-16 lg:pl-20 xl:pl-24 flex flex-col justify-center items-start sm:gap-6 md:gap-[44px]"
+        class="h-full sm:w-1/2 bg-primary p-8 sm:p-0 sm:pl-16 lg:pl-20 xl:pl-24 flex flex-col justify-center items-center"
       >
-        <h1
-          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-montserrat font-medium"
+        <div
+          class="flex w-4/5 sm:w-full flex-col justify-center items-start gap-6 md:gap-[44px]"
         >
-          Nowoczesna aranżacja
-          <br />
-          Twojego ogrodu
-        </h1>
-        <p class="w-4/5 text-xs sm:text-sm md:text-base">
-          Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
-          realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
-          podejściem do każdego projektu.
-        </p>
-        <div class="flex flex-col md:flex-row gap-9 w-full">
+          <h1
+            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-montserrat font-medium"
+          >
+            Nowoczesna aranżacja
+            <br />
+            Twojego ogrodu
+          </h1>
+          <p class="w-full sm:w-4/5 text-xs sm:text-sm md:text-base">
+            Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+            realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+            podejściem do każdego projektu.
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center sm:items-start xl:flex-row gap-1 xl:gap-9 w-full mt-4"
+        >
           <a href="#kontakt">
             <button
               class="bg-secondary text-white font-medium py-3 px-6 rounded-full mt-4 sm:mt-6 md:mt-8 transition duration-300"
             >
-              Skontaktuj się z nami
+              <span class="text-sm sm:text-base">Skontaktuj się z nami</span>
             </button>
           </a>
           <a href="#realizacja">
@@ -156,7 +166,9 @@
               class="bg-primary text-secondary border border-secondary font-medium py-3 px-6 rounded-full mt-4 sm:mt-6 md:mt-8 transition duration-300"
             >
               <div class="flex flex-row items-center gap-2">
-                Zobacz nasze realizacje
+                <span class="text-sm sm:text-base">
+                  Zobacz nasze realizacje
+                </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -174,9 +186,9 @@
           </a>
         </div>
       </div>
-      <div class="h-full w-16 bg-primary"></div>
+      <div class="h-full w-16 bg-primary hidden sm:block"></div>
       <div
-        class="h-full sm:w-1/2 bg-gradient-to-t from-white via-white to-transparent bg-no-repeat bg-cover flex items-center justify-center relative"
+        class="h-1/2 sm:h-full sm:w-1/2 bg-gradient-to-t from-white via-white to-transparent bg-no-repeat bg-cover flex items-center justify-center relative"
       >
         <img
           src="imgs/krzaki.jpg"
@@ -188,29 +200,37 @@
     </div>
     <div
       id="oferta"
-      class="flex flex-col bg-tertiary w-screen pt-[120px] pb-40 gap-24"
+      class="flex flex-col bg-tertiary w-screen pt-[45px] sm:pt-[120px] pb-[15px] sm:pb-40 gap-16 sm:gap-24"
     >
       <!-- TODO: between sm and xl -->
-      <div class="flex flex-col justify-center items-start px-8 xl:px-[200px]">
-        <p class="text-secondary mb-1 sm:mb-2 md:mb-4">Oferta</p>
+      <div
+        class="flex flex-col justify-center items-start px-[64px] sm:px-[128px] md:px-[133px] lg:px-[167px] xl:px-[200px] gap-2 sm:gap-0"
+      >
+        <p
+          class="text-secondary mb-1 sm:mb-2 md:mb-4 text-xs sm:text-sm md:text-base"
+        >
+          Oferta
+        </p>
         <h2
           class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-montserrat font-medium mb-1 sm:mb-2 md:mb-4 lg:mb-6 xl:mb-8 tracking-[-1.44px]"
         >
           Działamy
           <i>kompleksowo</i>
         </h2>
-        <p class="w-2/3">
+        <p class="w-full sm:w-2/3 text-xs sm:text-sm md:text-base">
           Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
           nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla
           Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym
           etapie posłużymy radą i wieloletnim doświadczeniem.
         </p>
       </div>
-      <div class="flex flex-row justify-between w-full px-[88px]">
+      <div
+        class="flex flex-row flex-wrap justify-center gap-8 sm:gap-16 p-auto mx-8 sm:mx-16 w-[calc(100wh - 128px)]"
+      >
         <div
-          class="flex flex-col justify-between items-start w-[378px] h-[370px] px-10 py-12 bg-white rounded-[28px]"
+          class="flex flex-col justify-between items-start w-[378px] h-auto sm:h-[370px] px-10 py-12 bg-white rounded-[28px]"
         >
-          <div class="flex flex-col justify-start items-start">
+          <div class="flex flex-col justify-start items-start pb-8 sm:pb-0">
             <img
               src="imgs/pencil-icon.png"
               alt=""
@@ -252,7 +272,7 @@
           </div>
         </div>
         <div
-          class="flex flex-col justify-between items-start w-[378px] h-[370px] px-10 py-12 bg-white rounded-[28px]"
+          class="flex flex-col justify-between items-start w-[378px] h-auto sm:h-[370px] px-10 py-12 bg-white rounded-[28px]"
         >
           <div class="flex flex-col justify-start items-start">
             <div class="flex items-center !w-10 !h-10 mb-8">
@@ -292,7 +312,7 @@
           </div>
         </div>
         <div
-          class="flex flex-col justify-between items-start w-[378px] h-[370px] px-10 py-12 bg-white rounded-[28px]"
+          class="flex flex-col justify-between items-start w-[378px] h-auto sm:h-[370px] px-10 py-12 bg-white rounded-[28px]"
         >
           <div class="flex flex-col justify-start items-start">
             <img
@@ -313,33 +333,35 @@
             </p>
           </div>
           <div class="flex flex-col justify-start items-start">
-            <button
-              class="flex flex-col text-secondary bg-white mt-4 sm:mt-6 md:mt-8"
-            >
-              <div class="flex items-center">
-                <span class="mr-[10px]">Dowiedz się więcej</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path
-                    d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
-                    fill="#1B5B31"
-                  />
-                </svg>
-              </div>
-              <div class="w-full h-[1px] bg-secondary mt-1"></div>
-            </button>
+            <a href="#realizacja">
+              <button
+                class="flex flex-col text-secondary bg-white mt-4 sm:mt-6 md:mt-8"
+              >
+                <div class="flex items-center">
+                  <span class="mr-[10px]">Dowiedz się więcej</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
+                      fill="#1B5B31"
+                    />
+                  </svg>
+                </div>
+                <div class="w-full h-[1px] bg-secondary mt-1"></div>
+              </button>
+            </a>
           </div>
         </div>
       </div>
     </div>
     <div
       id="ofirmie"
-      class="flex flex-col sm:flex-row w-screen h-screen about-height"
+      class="flex flex-col sm:flex-row w-screen h-auto sm:h-screen sm:about-height"
     >
       <div
         class="h-full sm:w-1/2 bg-gradient-to-t from-white via-white to-transparent bg-no-repeat bg-cover flex items-center justify-center relative"
@@ -350,11 +372,15 @@
           class="w-full h-full object-cover transform scale-x-[-1]"
         />
       </div>
-      <div class="h-full w-16 bg-secondary"></div>
+      <div class="h-full w-12 md:w-16 bg-secondary hidden sm:block"></div>
       <div
-        class="h-full sm:w-1/2 bg-secondary p-4 sm:p-8 md:p-16 lg:p-20 xl:p-24 flex flex-col justify-center items-start sm:gap-6"
+        class="h-full sm:w-1/2 bg-secondary p-12 sm:p-0 md:p-8 lg:p-20 xl:p-24 flex flex-col justify-center items-start gap-2 sm:gap-6"
       >
-        <p class="text-tertiary mb-1 sm:mb-2 md:mb-4">O firmie</p>
+        <p
+          class="text-tertiary mb-1 sm:mb-2 md:mb-4 text-xs sm:text-sm md:text-base"
+        >
+          O firmie
+        </p>
         <h2
           class="text-tertiary text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-montserrat font-medium mb-1 sm:mb-2 md:mb-6 lg:mb-8 xl:mb-10 tracking-[-1.44px]"
         >
@@ -363,7 +389,9 @@
           z
           <i>pasją</i>
         </h2>
-        <p class="text-tertiary text-xs sm:text-sm md:text-base mb-[72px]">
+        <p
+          class="w-full sm:w-4/5 md:w-full text-tertiary text-xs sm:text-sm md:text-base mb-8 sm:mb-[72px]"
+        >
           Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
           wykwalifikowani projektanci oraz architekci, których zadaniem jest
           rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja
@@ -375,7 +403,7 @@
           <button
             class="flex items-center text-tertiary bg-secondary rounded-full border-2 px-[22px] pt-3 pb-[14px]"
           >
-            <span class="mr-2">Poznaj nas bliżej</span>
+            <span class="mr-2 text-sm sm:text-base">Poznaj nas bliżej</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -394,9 +422,13 @@
     </div>
     <div id="realizacja" class="flex flex-col w-screen">
       <div
-        class="bg-primary pl-40 pt-[120px] pb-24 flex flex-col justify-start items-start"
+        class="bg-primary pl-12 sm:pl-16 md:pl-24 lg:pl-32 xl:pl-40 pt-12 sm:pt-[120px] pb-9 sm:pb-24 flex flex-col justify-start items-start"
       >
-        <p class="text-secondary mb-1 sm:mb-2 md:mb-4">Realizacja</p>
+        <p
+          class="text-secondary mb-1 sm:mb-2 md:mb-4 text-xs sm:text-sm md:text-base"
+        >
+          Realizacja
+        </p>
         <h2
           class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-montserrat font-medium tracking-[-1.44px]"
         >
@@ -466,7 +498,7 @@
           </div>
         </div>
         <div
-          class="absolute bottom-[90px] z-20 w-full flex justify-center items-center"
+          class="absolute bottom-8 lg:bottom-[90px] z-20 w-full flex justify-center items-center"
         >
           <button
             class="border-2 border-blackish px-[22px] pt-3 pb-[14px] rounded-full z-20"
@@ -490,20 +522,27 @@
         </div>
       </div>
     </div>
-    <div id="kontakt" class="bg-tertiary w-screen h-[50vh] py-[60px]">
+    <div
+      id="kontakt"
+      class="bg-tertiary w-screen h-auto py-[45px] sm:py-[60px]"
+    >
       <div
-        class="flex items-end justify-between gap-16 mx-[200px] px-[110px] py-[120px] bg-secondary w-[calc(100wh - 400px)] h-full"
+        class="flex flex-col sm:flex-row items-center xl:items-end justify-between gap-12 sm:gap-16 px-[18px] sm:px-[110px] py-[32px] sm:py-[120px] bg-secondary mx-[30px] sm:mx-[45px] lg:mx-[100px] xl:mx-[200px] w-[calc(100wh - 60px)] sm:w-[calc(100wh - 90px)] lg:w-[calc(100wh - 200px)] xl:w-[calc(100wh - 400px)] h-full text-center sm:text-left"
       >
         <h2
-          class="text-tertiary font-montserrat text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px]"
+          class="text-tertiary font-montserrat text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] tracking-[-2px]"
         >
           Zostańmy w kontakcie!
           <br />
           Znajdziesz nas na
           <i class="font-semibold">Instagramie.</i>
         </h2>
-        <div class="w-1/5 flex flex-col items-start gap-6 h-full">
-          <p class="text-tertiary">Śledź nasze najnowsze realizacje!</p>
+        <div
+          class="xl:w-1/5 flex flex-col items-center sm:items-start gap-6 h-full"
+        >
+          <p class="text-tertiary tracking-[-0.16px]">
+            Śledź nasze najnowsze realizacje!
+          </p>
           <button
             class="bg-tertiary text-secondary px-6 pt-[10px] pb-3 rounded-full"
           >
@@ -514,7 +553,7 @@
     </div>
     <footer class="flex flex-col bg-blackish text-tertiary w-full h-auto">
       <div
-        class="flex flex-col my-10 md:my-20 mx-[45px] lg:mx-[100px] xl:mx-[200px] w-[calc(100wh - 90px)] lg:w-[calc(100wh - 200px)] xl:w-[calc(100wh - 400px)] h-full"
+        class="flex flex-col my-10 md:my-20 mx-[30px] sm:mx-[45px] lg:mx-[100px] xl:mx-[200px] w-[calc(100wh - 60px)] sm:w-[calc(100wh - 90px)] lg:w-[calc(100wh - 200px)] xl:w-[calc(100wh - 400px)] h-full"
       >
         <div
           class="flex flex-col md:flex-row gap-10 md:gap-0 justify-between items-center w-full h-auto md:h-[50px]"
@@ -687,6 +726,6 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
