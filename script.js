@@ -75,3 +75,72 @@ addEventListener("resize", event => {
   }
   lastWidth = window.innerWidth;
 });
+
+function morePhotos() {
+  const rozwin_btn = document.getElementById("rozwin_btn");
+  rozwin_btn.style.display = "none";
+
+  const grid = document.querySelector(".grid-masonry");
+  grid.innerHTML += `
+  <div class="grid-item-masonry">
+    <a href="imgs/10.jpg" data-lightbox="imgs">
+      <img src="imgs/10.jpg" alt="" />
+    </a>
+  </div>
+  <div class="grid-item-masonry">
+    <a href="imgs/11.jpg" data-lightbox="imgs">
+      <img src="imgs/11.jpg" alt="" />
+    </a>
+  </div>
+  <div class="grid-item-masonry">
+    <a href="imgs/12.jpg" data-lightbox="imgs">
+      <img src="imgs/12.jpg" alt="" />
+    </a>
+  </div>
+  <div class="grid-item-masonry">
+    <a href="imgs/13.jpg" data-lightbox="imgs">
+      <img src="imgs/13.jpg" alt="" />
+    </a>
+  </div>
+  <div class="grid-item-masonry">
+    <a href="imgs/14.jpg" data-lightbox="imgs">
+      <img src="imgs/14.jpg" alt="" />
+    </a>
+  </div>
+  <div class="grid-item-masonry">
+    <a href="imgs/15.jpg" data-lightbox="imgs">
+      <img src="imgs/15.jpg" alt="" />
+    </a>
+  </div>
+  <div class="grid-item-masonry">
+    <a href="imgs/16.jpg" data-lightbox="imgs">
+      <img src="imgs/16.jpg" alt="" />
+    </a>
+  </div>`;
+
+  const gradient = document.getElementById("gradient");
+  gradient.style.display = "none";
+
+  const masonry = new Masonry(grid, {
+    itemSelector: ".grid-item-masonry",
+    gutter: ".gutter-sizer",
+    horizontalOrder: true,
+  });
+
+  const realizacja = document.getElementById("realizacja");
+  const realizacja_height = realizacja.offsetHeight;
+
+  console.log(realizacja_height);
+
+  masonry.layout();
+
+  const interval = setInterval(() => {
+    console.log(realizacja.offsetHeight);
+    console.log("timeout");
+    masonry.layout();
+    if (realizacja.offsetHeight > realizacja_height * 1.3) {
+      clearInterval(interval);
+      masonry.layout();
+    }
+  }, 10);
+}
