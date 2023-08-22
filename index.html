@@ -1,3 +1,4 @@
+<!-- COPILOT - add hovers, animations, and transitions to all -->
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth transition">
   <head>
@@ -21,7 +22,6 @@
     class="flex flex-col items-center bg-tertiary text-blackish font-inter overflow-x-hidden"
   >
     <header class="h-auto lg:h-[72px] w-full bg-white">
-      <!-- py-6 -->
       <div
         class="flex items-stretch px-4 sm:px-8 md:px-16 lg:px-20 xl:px-24 w-full h-full relative"
       >
@@ -159,7 +159,7 @@
               <div
                 class="hidden flex-col absolute top-5 left-[-10px] lg:group-hover:flex bg-white min-w-[150px] z-10"
               >
-                <div class="px-3 py-4"></div>
+                <div class="px-3 py-3"></div>
                 <a href="#card-projekty" class="px-3 py-4 hover:bg-gray-100 hv">
                   Projekty
                 </a>
@@ -220,7 +220,7 @@
     <!-- TODO: slider -->
     <div
       id="intro"
-      class="flex flex-col sm:flex-row w-screen h-screen intro-height"
+      class="flex flex-col sm:flex-row w-screen h-screen intro-height relative"
     >
       <div
         class="h-full sm:w-1/2 bg-primary p-8 sm:p-0 sm:pl-16 lg:pl-20 xl:pl-24 flex flex-col justify-center items-center"
@@ -246,14 +246,14 @@
         >
           <a href="#kontakt">
             <button
-              class="bg-secondary text-white font-medium py-3 px-6 rounded-full mt-4 sm:mt-6 md:mt-8 transition duration-300"
+              class="bg-secondary text-tertiary font-medium py-3 px-6 rounded-full mt-4 sm:mt-6 md:mt-8 hv hover:bg-secondary-dark hover:bg-lightSecondary hover:text-lightTertiary"
             >
               <span class="text-sm sm:text-base">Skontaktuj się z nami</span>
             </button>
           </a>
           <a href="#realizacja">
             <button
-              class="bg-primary text-secondary border border-secondary font-medium py-3 px-6 rounded-full mt-4 sm:mt-6 md:mt-8 transition duration-300"
+              class="bg-primary text-secondary border border-secondary font-medium py-3 px-6 rounded-full mt-4 sm:mt-6 md:mt-8 hv hover:bg-lightPrimary hover:text-lightSecondary hover:border-lightSecondary"
             >
               <div class="flex flex-row items-center gap-2">
                 <span class="text-sm sm:text-base">
@@ -287,12 +287,49 @@
         />
       </div>
       <!-- TODO: add arrows for slider -->
+      <div class="absolute bottom-0 right-0 w-48 h-24 px-8 py-6 bg-tertiary">
+        <div class="flex justify-between gap-8 w-full h-full">
+          <div
+            class="flex justify-center items-center w-full h-full cursor-pointer"
+            onclick="plusSlides(-1)"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="27"
+              height="24"
+              viewBox="0 0 27 24"
+              fill="none"
+            >
+              <path
+                d="M0.795115 10.9393C0.209328 11.5251 0.209328 12.4749 0.795114 13.0607L10.3411 22.6066C10.9268 23.1924 11.8766 23.1924 12.4624 22.6066C13.0482 22.0208 13.0482 21.0711 12.4624 20.4853L3.97709 12L12.4624 3.51472C13.0482 2.92893 13.0482 1.97918 12.4624 1.3934C11.8766 0.80761 10.9268 0.80761 10.3411 1.3934L0.795115 10.9393ZM26.1442 10.5L1.85577 10.5L1.85577 13.5L26.1442 13.5L26.1442 10.5Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <div
+            class="flex justify-center items-center w-full h-full cursor-pointer"
+            onclick="plusSlides(1)"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="27"
+              height="24"
+              viewBox="0 0 27 24"
+              fill="none"
+            >
+              <path
+                d="M26.2049 13.0607C26.7907 12.4749 26.7907 11.5251 26.2049 10.9393L16.6589 1.3934C16.0732 0.807611 15.1234 0.807611 14.5376 1.3934C13.9518 1.97919 13.9518 2.92893 14.5376 3.51472L23.0229 12L14.5376 20.4853C13.9518 21.0711 13.9518 22.0208 14.5376 22.6066C15.1234 23.1924 16.0732 23.1924 16.6589 22.6066L26.2049 13.0607ZM0.855774 13.5H25.1442V10.5H0.855774V13.5Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
     <div
       id="oferta"
       class="flex flex-col bg-tertiary w-screen pt-[45px] sm:pt-[120px] pb-[15px] sm:pb-40 gap-16 sm:gap-24"
     >
-      <!-- TODO: between sm and xl -->
       <div
         class="flex flex-col justify-center items-start px-[64px] sm:px-[128px] md:px-[133px] lg:px-[167px] xl:px-[200px] gap-2 sm:gap-0"
       >
@@ -405,7 +442,7 @@
         </div>
         <div
           id="card-realizacje"
-          class="flex flex-col justify-between items-start w-[378px] h-auto sm:h-[370px] px-10 py-12 bg-white rounded-[28px]"
+          class="flex flex-col justify-between items-start w-[378px] h-auto sm:h-[370px] px-10 py-12 bg-white rounded-[28px] mb-[80px] sm:mb-0"
         >
           <div class="flex flex-col justify-start items-start">
             <img
@@ -494,7 +531,7 @@
         </p>
         <a href="#realizacja">
           <button
-            class="flex items-center text-tertiary bg-secondary rounded-full border-2 px-[22px] pt-3 pb-[14px]"
+            class="flex items-center bg-secondary text-tertiary rounded-full border-2 px-[22px] pt-3 pb-[14px] hv hover:bg-lightSecondary hover:text-lightTertiary"
           >
             <span class="mr-2 text-sm sm:text-base">Poznaj nas bliżej</span>
             <svg
@@ -542,7 +579,6 @@
             );
           "
         ></div>
-        <!-- TODO: Masonry - each column the same final height -->
         <div class="grid-masonry absolute top-0">
           <div class="gutter-sizer"></div>
           <div class="grid-item-masonry">
@@ -596,7 +632,7 @@
         >
           <button
             id="rozwin_btn"
-            class="border-2 border-blackish px-[22px] pt-3 pb-[14px] rounded-full z-20"
+            class="border-2 bg-primary border-blackish px-[22px] pt-3 pb-[14px] rounded-full z-20 hv hover:bg-lightPrimary hover:text-lightBlackish hover:border-lightBlackish"
             onclick="morePhotos()"
           >
             <div class="flex items-center">
@@ -640,7 +676,7 @@
             Śledź nasze najnowsze realizacje!
           </p>
           <button
-            class="bg-tertiary text-secondary px-6 pt-[10px] pb-3 rounded-full"
+            class="bg-tertiary text-secondary px-6 pt-[10px] pb-3 rounded-full hv hover:bg-lightTertiary hover:text-lightSecondary"
           >
             Instagram
           </button>
@@ -713,7 +749,9 @@
           >
             <p>Daj znać, co możemy dla Ciebie zrobić!</p>
             <a href="#kontakt">
-              <button class="bg-secondary px-6 pt-3 pb-[14px] rounded-full">
+              <button
+                class="bg-secondary px-6 pt-3 pb-[14px] rounded-full hv hover:bg-lightSecondary hover:text-lightTertiary"
+              >
                 Skontaktuj się z nami
               </button>
             </a>

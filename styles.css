@@ -612,6 +612,14 @@ video {
   top: 1.25rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -682,6 +690,10 @@ video {
 
 .mt-\[-16px\] {
   margin-top: -16px;
+}
+
+.mb-\[80px\] {
+  margin-bottom: 80px;
 }
 
 .block {
@@ -760,6 +772,10 @@ video {
   height: 100vh;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .\!w-10 {
   width: 2.5rem !important;
 }
@@ -786,6 +802,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .min-w-\[150px\] {
@@ -1062,6 +1082,11 @@ video {
   padding-bottom: 45px;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -1199,10 +1224,6 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
-}
-
 .hv {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1228,21 +1249,57 @@ video {
   margin-bottom: 3.5%;
 }
 
-.item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
+.grid-item-masonry  img:hover {
+  transform: scale(1.1);
 }
 
 .gutter-sizer {
   width: 3.5%;
 }
 
+.hover\:border-lightBlackish:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 51 51 / var(--tw-border-opacity));
+}
+
+.hover\:border-lightSecondary:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(62 139 81 / var(--tw-border-opacity));
+}
+
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-lightPrimary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(211 194 172 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-lightSecondary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(62 139 81 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-lightTertiary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 229 225 / var(--tw-bg-opacity));
+}
+
+.hover\:text-lightBlackish:hover {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.hover\:text-lightSecondary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(62 139 81 / var(--tw-text-opacity));
+}
+
+.hover\:text-lightTertiary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(232 229 225 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1274,6 +1331,10 @@ video {
 
   .sm\:mt-6 {
     margin-top: 1.5rem;
+  }
+
+  .sm\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .sm\:block {
