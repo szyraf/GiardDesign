@@ -592,12 +592,20 @@ video {
   position: relative;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .bottom-8 {
   bottom: 2rem;
 }
 
 .left-\[-10px\] {
   left: -10px;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .top-0 {
@@ -612,12 +620,12 @@ video {
   top: 1.25rem;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.bottom-\[-3px\] {
+  bottom: -3px;
 }
 
-.right-0 {
-  right: 0px;
+.bottom-\[-13px\] {
+  bottom: -13px;
 }
 
 .z-10 {
@@ -664,6 +672,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-\[80px\] {
+  margin-bottom: 80px;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -690,10 +702,6 @@ video {
 
 .mt-\[-16px\] {
   margin-top: -16px;
-}
-
-.mb-\[80px\] {
-  margin-bottom: 80px;
 }
 
 .block {
@@ -748,6 +756,10 @@ video {
   height: 66.666667%;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .h-\[1px\] {
   height: 1px;
 }
@@ -772,10 +784,6 @@ video {
   height: 100vh;
 }
 
-.h-24 {
-  height: 6rem;
-}
-
 .\!w-10 {
   width: 2.5rem !important;
 }
@@ -792,6 +800,10 @@ video {
   width: 80%;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
 .w-\[378px\] {
   width: 378px;
 }
@@ -802,10 +814,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-48 {
-  width: 12rem;
 }
 
 .min-w-\[150px\] {
@@ -1032,6 +1040,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-\[18px\] {
   padding-left: 18px;
   padding-right: 18px;
@@ -1080,11 +1093,6 @@ video {
 .py-\[45px\] {
   padding-top: 45px;
   padding-bottom: 45px;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pb-3 {
@@ -1202,11 +1210,6 @@ video {
   color: rgb(245 240 236 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .blur {
   --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1303,6 +1306,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:bottom-0 {
+    bottom: 0px;
+  }
+
   .sm\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
@@ -1311,6 +1318,10 @@ video {
   .sm\:mx-\[45px\] {
     margin-left: 45px;
     margin-right: 45px;
+  }
+
+  .sm\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .sm\:mb-2 {
@@ -1331,10 +1342,6 @@ video {
 
   .sm\:mt-6 {
     margin-top: 1.5rem;
-  }
-
-  .sm\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .sm\:block {
@@ -1472,6 +1479,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:bottom-0 {
+    bottom: 0px;
+  }
+
   .md\:my-20 {
     margin-top: 5rem;
     margin-bottom: 5rem;
