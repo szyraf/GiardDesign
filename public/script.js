@@ -138,7 +138,7 @@ function morePhotos() {
     console.log(realizacja.offsetHeight);
     console.log("timeout");
     masonry.layout();
-    if (realizacja.offsetHeight > realizacja_height * 1.3) {
+    if (realizacja.offsetHeight > realizacja_height * 1.4) {
       clearInterval(interval);
       masonry.layout();
     }

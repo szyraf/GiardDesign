@@ -24,11 +24,8 @@
     margin-bottom: 3.5%;
 }
 
-.item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+.grid-item-masonry  img:hover {
+    transform: scale(1.1);
 }
 
 .gutter-sizer {
